@@ -1,0 +1,49 @@
+header
+    background-color: $color-black
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100vh
+    overflow: auto
+
+    .hearts
+        position: relative
+        display: flex
+        justify-content: flex-end
+
+    .clouds
+        position: relative
+        display: block
+        height: 50vh
+        overflow: hidden
+    
+    img
+        &.heart
+            height: 3em
+            margin: ms(0)
+        &.cloud-sm, &.cloud-md, &.cloud-lg
+            position: absolute
+            left: 100%
+        &.cloud-sm
+            animation: clouds 52s linear 10s infinite running
+            height: 6em
+            top: 40%
+        &.cloud-md
+            animation: clouds 45s linear 0s infinite running
+            height: 8em
+            top: 70%
+        &.cloud-lg
+            animation: clouds 60s linear 20s infinite running
+            height: 9em
+            top: 5%
+
+    .press-start
+        display: block
+        text-align: center
+        a
+            color: $color-white
+            +font-heading
+            font-size: ms(2)
+            letter-spacing: 5px
+            margin: ms(2)
+            text-decoration: none

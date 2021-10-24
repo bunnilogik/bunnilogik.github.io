@@ -1,0 +1,21 @@
+// Number Functions
+@function is-number($value)
+  @return type-of($value) == 'number' and index('%' 'em' 'ex' 'ch' 'rem' 'vw' 'vh' 'vmin' 'vmax' 'cm' 'mm' 'in' 'px' 'pt' 'pc', unit($value)) != null
+
+@function strip-units($value)
+  @if $value == 0
+    @if type-of($value) == 'number' and not unitless($value)
+      @return $value / ($value * 0 + 1)
+  @return $value
+
+@function pow($number, $exponent)
+  @if floor($exponent) != $exponent
+    @error 'Exponent must be an integer'
+  $value: $number
+  @if $exponent > 0
+    @for $i from 1 through $exponent
+      $value: $value * $number
+  @else
+    @for $i from $exponent through 0
+      $value: $value / $number
+  @return $value

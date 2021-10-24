@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title BunniLogik
+
+        link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+        link(rel="manifest" href="/site.webmanifest")
+
+        //link(rel="preconnect" href="https://fonts.googleapis.com")
+        //link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        //link(href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://use.typekit.net/fiz5bdl.css")
+        link(rel="stylesheet" href="styles/main.css")
+
+    body
+        
+        header
+            h1 BunniLogik
+
+            img.logo(src="assets/img/bunnilogik.png" alt="BunniLogik")
+            
+            section.hearts
+                img.heart(src="assets/img/bunniheart-px.png" alt="BunniHeart")
+                img.heart(src="assets/img/bunniheart-px.png" alt="BunniHeart")
+                img.heart(src="assets/img/bunniheart-px.png" alt="BunniHeart")
+
+            .clouds
+                img.cloud-sm(src="assets/img/bunnicloud.png" alt="cloud")
+                img.cloud-md(src="assets/img/bunnicloud-md.png" alt="cloud")
+                img.cloud-lg(src="assets/img/bunnicloud-lg.png" alt="cloud")
+
+            .press-start
+                a(href="#main-content") Press Start
+
+        main
+            a(name="main-content")
+            article.about
+                section
+                    h2 Who are we?
+                    
+                    p We're a couple who likes to have FUN! We set time aside twice a week to shut off the work, invite people, and play some games. We're all about that positivity and we know you will enjoy your time here.
+
+                    p We invite some backseat gaming and want you to feel what we loved as our younger selves. We would hang on the couch, relax with friends and just take turns playing those old NES games. Nothing, and i mean NOTHING, matches that feeling of competitive cooperation.
+
+                    p So come get on the couch and watch us fumble our way through some entertaining games!
+
+                    a.cta(href="https://twitch.tv/bunnilogik" target="_blank") Come Hang Out
+
+            article.charity
+                section
+                    h2 Charity
+
+                    p We are currently working on a stretch goal for Extra Life in support of Children's Hospital and Medical Center in Omaha, Nebraska. Donations fund critical treatments, healthcare services, pediatric medical equiptment and charitable care.
+
+                    a.cta(href="https://www.extra-life.org/participant/bunnilogik" target="_blank") Donate
+
+                    p Children's Hospital & Medical Center is the only full-service pediatric health care center in Nebraska, providing unique resources to children from across a five-state region and beyond. Patients are referred from throughout the region for the treatment of complex and rare diseases, in addition to pediatric primary care. Children's state-of-the-art Specialty Pediatric Center offers expertise in more than 50 specialty services. A regional heart center, Children's also provides expertise in pediatric heart transplantation. The hospital is home to Nebraska's only Level IV regional Newborn Intensive Care Unit and the state's only Level II Pediatric Trauma Center.
+
+
+            article.shop
+                section
+                    h2 Check out our merch!
+                    
+                    #merch
+
+                    a.cta(href="https://bunnilogik.bigcartel.com/" target="_blank") Shop
+                    
+
+        footer
+            section
+                ul.navigation
+                    li: a.icon.icon-twitch(href="https://twitch.tv/BunniLogik"): span.social-link Twitch
+                    li: a.icon.icon-twitter(href="https://twitter.com/BunniLogik"): span.social-link Twitter
+                    li: a.icon.icon-instagram(href="https://www.instagram.com/bunnilogik/"): span.social-link Instagram
+                    li: a.icon.icon-youtube(href="https://www.youtube.com/channel/UCsx25nVTZXDhToacCuB9O6g/featured"): span.social-link YouTube
+                    li: a.icon.icon-bigcartel(href="https://bunnilogik.bigcartel.com"): span.social-link Merch
+
+        script(type="text/javascript" src="script/app.js")

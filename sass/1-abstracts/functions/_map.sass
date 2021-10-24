@@ -1,0 +1,30 @@
+// Map Functions
+@function map-deep-get($map, $keys...)
+  @each $key in $keys
+    $map: map-get($map, $key)
+  @return $map
+
+@function map-has-keys($map, $keys...)
+  @each $key in $keys
+    @if not map-has-key($map, $key)
+      @return false
+  @return true
+
+@function map-has-nested-keys($map, $keys...)
+  @each $key in $keys
+    @if not map-has-key($map, $key)
+      @return false
+    $map: map-get($map, $key)
+  @return true
+
+@function map-fetch($map, $keys)
+  $key: nth($keys, 1)
+  $length: length($keys)
+  $value: map-get($map, $key)
+  @if $length > 1
+    $rest: ()
+    @for $i from 2 through $length
+      $rest: append($rest, nth($keys, $i))
+    @return map-fetch($value, $rest)
+  @else
+    @return $value

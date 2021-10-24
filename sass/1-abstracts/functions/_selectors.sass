@@ -1,0 +1,11 @@
+// Selector Functions
+@function insert-hyphen($str)
+  @if $str != ''
+    @return str-insert($str, '-', 0)
+  @return $str
+
+@function class-selector($str)
+  @if str-index($str, '.') == 1
+    @return str-slice($str, 2)
+  @else
+    @return $str

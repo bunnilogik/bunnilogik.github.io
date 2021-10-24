@@ -1,0 +1,53 @@
+$base: (
+  sizes: (
+    "": (
+      breakpoint: 0,
+      container: 90%,
+      font-size: 1rem
+    ),
+    xs: (
+      breakpoint: 480px,
+      container: 460px,
+      font-size: false
+    ),
+    sm: (
+      breakpoint: 576px,
+      container: 540px,
+      font-size: false
+    ),
+    md: (
+      breakpoint: 768px,
+      container: 720px,
+      font-size: false
+    ),
+    lg: (
+      breakpoint: 992px,
+      container: 960px,
+      font-size: 1.2rem
+    ),
+    xl: (
+      breakpoint: 1200px,
+      container: 1140px,
+      font-size: 1.4rem
+    ),
+    xxl: (
+      breakpoint: 1400px,
+      container: 1320px,
+      font-size: false
+    )
+  )
+);
+
+$xs: map-deep-get($base, sizes, xs, breakpoint);
+$sm: map-deep-get($base, sizes, sm, breakpoint);
+$md: map-deep-get($base, sizes, md, breakpoint);
+$lg: map-deep-get($base, sizes, lg, breakpoint);
+$xl: map-deep-get($base, sizes, xl, breakpoint);
+$xxl: map-deep-get($base, sizes, xxl, breakpoint);
+
+$container-xs: map-deep-get($base, sizes, xs, container);
+$container-sm: map-deep-get($base, sizes, sm, container);
+$container-md: map-deep-get($base, sizes, md, container);
+$container-lg: map-deep-get($base, sizes, lg, container);
+$container-xl: map-deep-get($base, sizes, xl, container);
+$container-xxl: map-deep-get($base, sizes, xxl, container);

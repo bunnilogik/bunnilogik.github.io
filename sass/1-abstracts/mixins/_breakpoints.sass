@@ -1,0 +1,32 @@
+=break($screen-min: null, $screen-max: null, $orientation: null)
+  $min: $screen-min
+  $max: $screen-max
+  $o: $orientation
+  $query: unquote('only screen')
+
+  @if $min != null and $min != ''
+    @if map-has-nested-keys($base, sizes, $screen-min)
+      $min: map-deep-get($base, sizes, $screen-min, breakpoint)
+    @else
+      $min: $screen-min
+
+    @if is-number($min)
+      $query: append($query, unquote('and (min-width: #{$min})'))
+
+  @if $max != null and $max != ''
+    @if map-has-nested-keys($base, sizes, $screen-max)
+      $max: map-deep-get($base, sizes, $screen-max, breakpoint)
+    @else
+      $max: $screen-max
+
+    @if is-number($max)
+      $query: append($query, unquote('and (max-width: #{$max})'))
+
+  @if $orientation == landscape or $orientation == portrait
+    $o: $orientation
+    $query: append($query, unquote('and (orientation: #{$o})'))
+  @else
+    $o: null
+
+  @media #{$query}
+    @content

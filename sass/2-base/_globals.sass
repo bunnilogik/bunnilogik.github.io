@@ -1,0 +1,31 @@
+html, body
+    font-size: 14px
+    scroll-behavior: smooth
+    +break($md)
+        font-size: 16px
+    +break($lg)
+        font-size: 18px
+    +break($xl)
+        font-size: 20px
+    
+article
+    width: 100%
+    padding-top: ms(1)
+    padding-bottom: ms(1)
+
+section
+    margin-left: auto
+    margin-right: auto
+    margin-top: ms(1)
+    margin-bottom: ms(1)
+    width: 90%
+    +break($sm)
+        width: $container-sm
+    +break($md)
+        width: $container-md
+    +break($lg)
+        width: $container-lg
+    +break($xl)
+        width: $container-xl
+    +break($xxl)
+        width: $container-xxl

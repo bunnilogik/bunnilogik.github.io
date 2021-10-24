@@ -1,0 +1,9 @@
+// Font Functions
+@function ms-vars($element, $size: '')
+  $element-exponent: map-deep-get($typography, font-sizing, $element)
+  $base-fs: map-deep-get($base, sizes, $size, font-size)
+  $base-lh: map-deep-get($base, sizes, $size, line-height)
+  $ratio: map-deep-get($base, sizes, $size, ratio)
+  $fs: pow($ratio, $element-exponent) * 1rem
+  $lh: $base-fs * $base-lh
+  @return (element-exponent: $element-exponent, base-fs: $base-fs, base-lh: $base-lh, ratio: $ratio, fs: $fs, lh: $lh)

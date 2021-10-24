@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6, p, a, span
+    font-family: sans-serif
+    margin: 0
+    padding: 0
+
+h1
+    font-size: 0
+    width: 1px
+    height: 1px
+    display: inline-block
+    overflow: hidden
+    position: absolute !important
+    border: 0 !important
+    padding: 0 !important
+    margin: 0 !important
+    clip: rect(1px,1px,1px,1px)
+
+h2
+    +font-heading
+    font-size: ms(4)
+    line-height: ms(3) / 2
+    margin-bottom: ms(1)
+
+h3
+    +font-heading
+    font-size: ms(1)
+    letter-spacing: 1px
+
+p
+    +font-paragraph
+    font-size: ms(1)
+    line-height: ms(1)
+    letter-spacing: 0.05em
+    margin-bottom: ms(1)
+
+    &.price
+        font-size: ms(0)
+        letter-spacing: 0.05em
+
+blockquote
+    +font-paragraph
+    font-size: ms(0)
+    line-height: ms(1)
+    letter-spacing: 0.05em
+    border-left: 0.5em solid black
+    margin: ms(1) ms(3)
