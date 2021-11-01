@@ -319,36 +319,16 @@ template {
   100% {
     left: -50%; } }
 
-@-webkit-keyframes drop-in {
+@-webkit-keyframes logo {
   0% {
-    opacity: 0;
-    bottom: 150%;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  50% {
-    opacity: 1;
-    bottom: 40%; }
-  75% {
-    opacity: 1;
-    bottom: 55%; }
+    bottom: 150%; }
   100% {
-    opacity: 1;
     bottom: 50%; } }
 
-@keyframes drop-in {
+@keyframes logo {
   0% {
-    opacity: 0;
-    bottom: 150%;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  50% {
-    opacity: 1;
-    bottom: 40%; }
-  75% {
-    opacity: 1;
-    bottom: 55%; }
+    bottom: 150%; }
   100% {
-    opacity: 1;
     bottom: 50%; } }
 
 @font-face {
@@ -430,6 +410,16 @@ p {
   p.price {
     font-size: 1em;
     letter-spacing: 0.05em; }
+
+blockquote {
+  font-family: unit-rounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5625em;
+  letter-spacing: 0.05em;
+  border-left: 0.5em solid black;
+  margin: 1.5625em 2.44141em; }
 
 html, body {
   font-size: 14px;
@@ -532,15 +522,14 @@ ul.navigation {
   justify-content: center; }
 
 .logo {
-  -webkit-animation: drop-in 1.5s ease 0.3s forwards;
-  animation: drop-in 1.5s ease 0.3s forwards;
-  bottom: 50%;
+  -webkit-animation: logo 2s ease-in-out 0.3s forwards;
+  animation: logo 2s ease-in-out 0.3s forwards;
+  bottom: 150%;
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
-  opacity: 0;
   width: 75%;
   z-index: 1; }
   @media only screen and (min-width: 768px) {
@@ -609,60 +598,52 @@ header {
   justify-content: space-around;
   height: 100vh;
   overflow: auto; }
-
-.hearts {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-
-.clouds {
-  position: relative;
-  display: block;
-  height: 50vh;
-  overflow: hidden; }
-
-img.heart {
-  height: 3em;
-  margin: 1em; }
-
-img.cloud-sm, img.cloud-md, img.cloud-lg {
-  position: absolute;
-  left: 100%; }
-
-img.cloud-sm {
-  -webkit-animation: clouds 52s linear 10s infinite running;
-  animation: clouds 52s linear 10s infinite running;
-  height: 6em;
-  top: 40%; }
-
-img.cloud-md {
-  -webkit-animation: clouds 45s linear 0s infinite running;
-  animation: clouds 45s linear 0s infinite running;
-  height: 8em;
-  bottom: 0%; }
-
-img.cloud-lg {
-  -webkit-animation: clouds 60s linear 20s infinite running;
-  animation: clouds 60s linear 20s infinite running;
-  height: 9em;
-  top: 5%; }
-
-.press-start {
-  display: block;
-  text-align: center; }
-  .press-start a {
-    color: #EFEFF1;
-    font-family: bitcount-prop-single-square, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.95313em;
-    letter-spacing: 5px;
-    margin: 1.95313em;
-    text-decoration: none; }
+  header .hearts {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  header .clouds {
+    position: relative;
+    display: block;
+    height: 50vh;
+    overflow: hidden; }
+  header img.heart {
+    height: 3em;
+    margin: 1em; }
+  header img.cloud-sm, header img.cloud-md, header img.cloud-lg {
+    position: absolute;
+    left: 100%; }
+  header img.cloud-sm {
+    -webkit-animation: clouds 52s linear 10s infinite running;
+    animation: clouds 52s linear 10s infinite running;
+    height: 6em;
+    top: 40%; }
+  header img.cloud-md {
+    -webkit-animation: clouds 45s linear 0s infinite running;
+    animation: clouds 45s linear 0s infinite running;
+    height: 8em;
+    top: 70%; }
+  header img.cloud-lg {
+    -webkit-animation: clouds 60s linear 20s infinite running;
+    animation: clouds 60s linear 20s infinite running;
+    height: 9em;
+    top: 5%; }
+  header .press-start {
+    display: block;
+    text-align: center; }
+    header .press-start a {
+      color: #EFEFF1;
+      font-family: bitcount-prop-single-square, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.95313em;
+      letter-spacing: 5px;
+      margin: 1.95313em;
+      text-decoration: none; }
 
 #merch {
   display: -webkit-box;
