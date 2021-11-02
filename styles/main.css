@@ -508,8 +508,8 @@ ul.navigation {
   font-weight: 700;
   font-style: normal;
   font-size: 1.95313em;
-  background: #9A57CB;
-  color: #EFEFF1;
+  background: #9a57cb;
+  color: #fffffe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,9 +592,9 @@ nav {
     nav ul.navigation img {
       max-height: 1.5625em; }
     nav ul.navigation a {
-      color: #FDE09B; }
+      color: #bd7b95; }
       nav ul.navigation a:hover {
-        color: #FDBE34; }
+        color: #f9b73b; }
 
 header {
   background-color: #0E0E10;
@@ -655,7 +655,7 @@ img.cloud-lg {
   display: block;
   text-align: center; }
   .press-start a {
-    color: #EFEFF1;
+    color: #fffffe;
     font-family: bitcount-prop-single-square, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -684,12 +684,12 @@ img.cloud-lg {
   flex-basis: 33%; }
 
 footer {
-  background: #9A57CB;
+  background: #9a57cb;
   padding: 1.95313em 0; }
   footer a {
-    color: #EFEFF1;
+    color: #fffffe;
     -webkit-transition: color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
     footer a:hover {
-      color: #FDBE34; }
+      color: #f9b73b; }
