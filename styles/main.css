@@ -319,15 +319,27 @@ template {
   100% {
     left: -50%; } }
 
-@-webkit-keyframes logo {
+@-webkit-keyframes drop-in {
   0% {
-    bottom: 150%; }
+    bottom: 150%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  50% {
+    bottom: 40%; }
+  70% {
+    bottom: 60%; }
   100% {
     bottom: 50%; } }
 
-@keyframes logo {
+@keyframes drop-in {
   0% {
-    bottom: 150%; }
+    bottom: 150%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  50% {
+    bottom: 40%; }
+  70% {
+    bottom: 60%; }
   100% {
     bottom: 50%; } }
 
@@ -410,16 +422,6 @@ p {
   p.price {
     font-size: 1em;
     letter-spacing: 0.05em; }
-
-blockquote {
-  font-family: unit-rounded, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-  line-height: 1.5625em;
-  letter-spacing: 0.05em;
-  border-left: 0.5em solid black;
-  margin: 1.5625em 2.44141em; }
 
 html, body {
   font-size: 14px;
@@ -522,8 +524,8 @@ ul.navigation {
   justify-content: center; }
 
 .logo {
-  -webkit-animation: logo 2s ease-in-out 0.3s forwards;
-  animation: logo 2s ease-in-out 0.3s forwards;
+  -webkit-animation: drop-in 2s ease-in-out 0.3s forwards;
+  animation: drop-in 2s ease-in-out 0.3s forwards;
   bottom: 150%;
   left: 50%;
   position: absolute;
@@ -626,7 +628,7 @@ header {
     -webkit-animation: clouds 45s linear 0s infinite running;
     animation: clouds 45s linear 0s infinite running;
     height: 8em;
-    top: 70%; }
+    bottom: 0; }
   header img.cloud-lg {
     -webkit-animation: clouds 60s linear 20s infinite running;
     animation: clouds 60s linear 20s infinite running;
