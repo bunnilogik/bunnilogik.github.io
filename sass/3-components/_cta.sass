@@ -4,7 +4,7 @@
     background: $color-primary
     color: $color-white
     display: flex
-    flex-basis: 33.33%
+    flex-basis: 100%
     flex-grow: 0
     font-weight: bold
     letter-spacing: 0.15em
@@ -14,5 +14,8 @@
     padding: ms(0) 0
     text-align: center
     text-decoration: none
-    width: 33.33%
+    width: 100%
     justify-content: center
+    +break($sm)
+        flex-basis: 50%
+        width: 50%
