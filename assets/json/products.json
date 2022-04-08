@@ -15,18 +15,25 @@
             "category": "sticker"
         },
         {
-            "name": "Keg Games Mug",
-            "image": "https://assets.bigcartel.com/product_images/311906736/kegGames_mug.jpg?auto=format&fit=max&h=346&w=346",
-            "url": "https://bunnilogik.bigcartel.com/product/keg-games-mug",
-            "price": "$14.00 - $17.00",
-            "category": "mug"
-        },
-        {
             "name": "Bunni Bones Holographic Sticker",
             "image": "https://assets.bigcartel.com/product_images/302598360/DSC07907-1.jpg?auto=format&fit=max&h=346&w=346",
             "url": "https://bunnilogik.bigcartel.com/product/bunni-bones-holographic-sticker",
             "price": "$5.00",
             "category": "sticker"
+        },
+        {
+            "name": "Chicky Nuggies Sticker",
+            "image": "https://assets.bigcartel.com/product_images/327856083/ChickyNuggies.png?auto=format&fit=max&h=346&w=346",
+            "url": "https://bunnilogik.bigcartel.com/product/chicky-nuggies-sticker",
+            "price": "$4.00",
+            "category": "sticker",
+        },
+        {
+            "name": "#OnlyAnks Sticker",
+            "image": "https://assets.bigcartel.com/product_images/327855915/onlyAnks.png?auto=format&fit=max&h=346&w=346",
+            "url": "https://bunnilogik.bigcartel.com/product/onlyanks-sticker",
+            "price": "$4.00",
+            "category": "sticker",
         }
     ]
 }
